@@ -13,9 +13,9 @@ def pow(a, b):
 
     for i in range(1, b):
         a *= base
-    
+
     if (exp > 0):
         return a
-    
+
     elif (exp < 0):
         return (float(1 / a))
