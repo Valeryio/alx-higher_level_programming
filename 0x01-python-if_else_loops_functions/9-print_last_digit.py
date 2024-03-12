@@ -2,5 +2,8 @@
 
 def print_last_digit(number):
 
-    print(f"{str(number)[-1]}", end='')
-    return str(number)[-1]
+    try:
+        print(f"{str(number)[-1]}", end='')
+        return str(number)[-1]
+    except:
+        print("Traceback (most recent call last):")
