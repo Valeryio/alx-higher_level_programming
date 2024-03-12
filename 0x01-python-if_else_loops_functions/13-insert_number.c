@@ -25,8 +25,8 @@ listint_t *insert_node(listint_t **head, int number)
 			break;
 		}
 
-		printf("NOus avons : %d <= %d <= %d\n", iNode->n, newNode->n, iNode->next->n);
-
+/*		printf("NOus avons : %d <= %d <= %d\n", iNode->n, newNode->n, iNode->next->n);
+*/
 		if ((iNode->n <= newNode->n) && (newNode->n <= iNode->next->n))
 		{
 			newNode->next = iNode->next;
