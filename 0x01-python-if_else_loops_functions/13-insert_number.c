@@ -20,8 +20,8 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		if (iNode->n >= newNode->n)
 		{
-			newNode->next = iNode->next;
-			iNode->next = newNode;
+			newNode->next = iNode;
+			head = newNode;
 			break;
 		}
 
