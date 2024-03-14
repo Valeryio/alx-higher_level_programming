@@ -2,7 +2,7 @@
 
 import sys
 
-if __main__=="__main__":
+if __name__=="__main__":
     
     print("{}: argument".format(len(sys.argv) - 1))
     
