@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 
-import calculator_1 as calc
+from sys import argv
 
 if __name__ == "__main__":
-    a = 10
-    b = 5
 
-    print("{} + {} = {}".format(a, b, calc.add(a, b)))
-    print("{} - {} = {}".format(a, b, calc.sub(a, b)))
-    print("{} * {} = {}".format(a, b, calc.mul(a, b)))
-    print("{} / {} = {}".format(a, b, calc.div(a, b)))
+    if (len(argv) >= 3):
+        print("{}: arguments:".format(len(sys.argv) - 1))
+    elif (len(sys.argv) == 1):
+        print("{} arguments.".format(len(sys.argv) - 1))
+    else:
+        print("{}: argument:".format(len(sys.argv) - 1))
+
+    for i in range(1, len(sys.argv)):
+        print("{}: {}".format(i, sys.argv[i]))
