@@ -10,7 +10,7 @@ def new_in_list(my_list, idx, element):
             idx an element
             element an element
 
-        Returns: 
+        Returns:
             A new list data stucture
     """
 
