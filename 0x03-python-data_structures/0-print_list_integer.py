@@ -7,6 +7,10 @@ def print_list_integer(my_list=[]):
         Args:
             my_list: a list
     """
+    try:
+        int(my_list)
+    except TypeError:
+        pass
 
     for i in my_list:
         print("{a}".format(a=i))
