@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def print_list_integer(my_list=[]):
     """
         My print function
@@ -6,5 +7,6 @@ def print_list_integer(my_list=[]):
         Args:
             my_list: a list
     """
+
     for i in my_list:
         print("{}".format(i))
