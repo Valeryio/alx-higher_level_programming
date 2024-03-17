@@ -28,7 +28,13 @@ int is_palindrome(listint_t **head)
 	if (!palInt)
 		return (0);
 	
-	listLength = list_length(head);
+	iterator = *head;
+	while (iterator != NULL)
+	{
+		listLength++;
+		iterator = iterator->next;
+	}
+
 	iterator = *head;
 	/*Attribution of the right value to the dynamic table data structure */
 	for (; i < listLength; i++)
@@ -47,19 +53,4 @@ int is_palindrome(listint_t **head)
 		return (1);
 	else
 		return (0);
-}
-
-int list_length(listint_t **head)
-{
-	int listLength = 0;
-	listint_t *iterator = NULL;
-
-	iterator = *head;
-	while (iterator != NULL)
-	{
-		listLength++;
-		iterator = iterator->next;
-	}
-
-	return (listLength);
 }
