@@ -12,8 +12,6 @@
  * Return: 1 on success, 0 otherwise
  */
 
-int list_length(listint_t **head);
-
 int is_palindrome(listint_t **head)
 {
 	int *palInt = NULL, i = 0, listLength = 0, result = 0;
