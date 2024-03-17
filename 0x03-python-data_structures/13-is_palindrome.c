@@ -22,10 +22,6 @@ int is_palindrome(listint_t **head)
 		return (0);
 
 	/*Getting the length of the linked list*/
-	palInt = malloc(sizeof(int) * listLength);
-	if (!palInt)
-		return (0);
-	
 	iterator = *head;
 	while (iterator != NULL)
 	{
@@ -33,7 +29,11 @@ int is_palindrome(listint_t **head)
 		iterator = iterator->next;
 	}
 
+	palInt = malloc(sizeof(int) * listLength);
+	if (!palInt)
+		return (0);
 	iterator = *head;
+
 	/*Attribution of the right value to the dynamic table data structure */
 	for (; i < listLength; i++)
 	{
