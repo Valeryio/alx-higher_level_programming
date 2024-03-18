@@ -31,7 +31,10 @@ int is_palindrome(listint_t **head)
 
 	palInt = malloc(sizeof(int) * listLength);
 	if (!palInt)
+	{
+		free(palInt);
 		return (0);
+	}
 	iterator = *head;
 
 	/*Attribution of the right value to the dynamic table data structure */
