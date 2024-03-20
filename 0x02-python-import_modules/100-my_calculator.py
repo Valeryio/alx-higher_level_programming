@@ -18,18 +18,16 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-    match operator:
-        case '+':
-            print("{} {} {} = {}".format(x, operator, y, add(x, y)))
+    if operator == '+':
+        print("{} {} {} = {}".format(x, operator, y, add(x, y)))
+    elif operator == '-':
+        print("{} {} {} = {}".format(x, operator, y, sub(x, y)))
 
-        case '-':
-            print("{} {} {} = {}".format(x, operator, y, sub(x, y)))
+    elif operator == '*':
+        print("{} {} {} = {}".format(x, operator, y, mul(x, y)))
 
-        case '*':
-            print("{} {} {} = {}".format(x, operator, y, mul(x, y)))
+    elif operator == '/':
+        print("{} {} {} = {}".format(x, operator, y, div(x, y)))
 
-        case '/':
-            print("{} {} {} = {}".format(x, operator, y, div(x, y)))
-
-        case _:
-            pass
+    else:
+        pass
