@@ -12,7 +12,13 @@ def delete_at(my_list=[], idx=0):
         A new list
     """
     new_list = []
-    my_list.pop(idx)
+    to_delete = 0
+
+    for i in my_list:
+        if i == my_list[idx]:
+            to_delete = my_list[idx]
+
+    my_list.remove(to_delete)
     new_list = my_list
 
     return new_list
