@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import sys
-
 def print_reversed_list_integer(my_list=[]):
     """
         My reversed print function
@@ -9,8 +7,10 @@ def print_reversed_list_integer(my_list=[]):
         Args:
             my_list: a list
     """
-    if my_list == None:
-        sys.exit(0)
-    my_list.reverse()
-    for i in my_list:
-        print("{:d}".format(i))
+    if my_list is None:
+        print("".format(), end='')
+    else:
+        my_list.reverse()
+
+        for i in my_list:
+            print("{:d}".format(i))
