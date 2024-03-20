@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import sys
+
 def print_reversed_list_integer(my_list=[]):
     """
         My reversed print function
