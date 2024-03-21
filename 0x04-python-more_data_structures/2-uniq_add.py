@@ -9,4 +9,5 @@ def uniq_add(my_list=[]):
     Returns:
         An integer
     """
+
     return sum(set(my_list))
