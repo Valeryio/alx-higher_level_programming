@@ -6,7 +6,7 @@ def uniq_add(my_list = []):
         in a list
     Args:
         my_list: the list of integes
-    Result:
+    Returns:
         An integer
     """
     return sum(set(my_list))
