@@ -6,8 +6,16 @@ def uniq_add(my_list=[]):
         in a list
     Args:
         my_list: the list of integes
-    Returns:
+    Result:
         An integer
     """
 
-    return sum(set(my_list))
+    new_list = []
+
+    for i in range(len(my_list)):
+        if my_list[i] in new_list:
+            continue
+        else:
+            new_list.append(my_list[i])
+
+    return sum(new_list)

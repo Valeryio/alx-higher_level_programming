@@ -19,3 +19,16 @@ def uniq_add(my_list = []):
             new_list.append(my_list[i])
 
     return sum(new_list)
+#!/usr/bin/python
+
+def uniq_add(my_list=[]):
+    """
+        This function adds unique integers
+        in a list
+    Args:
+        my_list: the list of integes
+    Returns:
+        An integer
+    """
+
+    return sum(set(my_list))
