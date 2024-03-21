@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-def uniq_add(my_list = []):
+def uniq_add(my_list=[]):
     """
         This function adds unique integers
         in a list
