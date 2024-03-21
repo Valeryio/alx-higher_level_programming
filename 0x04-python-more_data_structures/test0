@@ -16,5 +16,6 @@ def square_matrix_simple(matrix=[]):
             tmp.append(matrix[i][j] * matrix[i][j])
         newmatrix.append(tmp.copy())
         tmp.clear()
-
+   
+   #newmatrix = list(map(lambda x: [i * i for i in x], matrix))
     return newmatrix
