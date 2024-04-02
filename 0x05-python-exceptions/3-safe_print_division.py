@@ -9,10 +9,12 @@ def safe_print_division(a, b):
     Return:
         A number or None
     """
+    c = 0
 
     try:
         c = a / b
-        print("Inside result: {}".format(c))
     except ZeroDivisionError:
-        print("Inside result: {}".format(None))
-        return None
+        c = None
+    finally:
+        print("Inside result: {}".format(c))
+        return c
