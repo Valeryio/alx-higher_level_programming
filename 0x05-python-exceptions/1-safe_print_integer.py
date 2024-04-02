@@ -8,6 +8,6 @@ def safe_print_integer(value):
     """
     try:
         print("{:d}".format(int(value)))
-    except:
+    except (TypeError, ValueError, NameError):
         return False
     return True
