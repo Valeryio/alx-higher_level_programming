@@ -39,6 +39,9 @@ class Square:
 
     def my_print(self):
         """This property print a square with the character <#>"""
+        if not self.__size:
+            print("")
+
         for i in range(self.__size):
             for j in range(self.__size):
                 print("#", end="")
