@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-class Square:
+class Square(object):
     """This is an empty class of square
 
     Note:
