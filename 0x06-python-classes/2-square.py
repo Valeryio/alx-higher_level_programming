@@ -12,12 +12,9 @@ class Square:
     Attributes:
     """
     def __init__(self, size=0):
-        try:
-            my_size = size + 0
-            if my_size < 0:
-                raise ValueError("size must be >= 0")
-            else:
-                self.__size = int(size)
-
-        except TypeError:
-            print("size must be an integer")
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = size
