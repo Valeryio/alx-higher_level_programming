@@ -13,7 +13,7 @@ class Square:
     """
     def __init__(self, size=0):
         try:
-            my_size = int(size)
+            my_size = size + 0
             if my_size < 0:
                 raise ValueError("size must be >= 0")
             else:
