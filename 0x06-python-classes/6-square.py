@@ -11,13 +11,18 @@ class Square:
     Args:
     Attributes:
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+        if not isinstance(position, tuple) and not len(position) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = position
 
     def area(self):
         return self.__size * self.__size
@@ -37,12 +42,27 @@ class Square:
         else:
             self.__size = value
 
+    @property
+    def position(self):
+        """ This property is a getter that return the position"""
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        """ This property is a setter of the property <size>"""
+        if not isinstance(value, tuple) and not len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = value
+
     def my_print(self):
         """This property print a square with the character <#>"""
         if not self.__size:
             print("")
 
-        for i in range(self.__size):
-            for k in range(self.__size):
+        for i in range(self.__size + self.position[0]):
+            for j in range(self.__position[0]):
+                print("_", end="")
+            for j in range(self.__size):
                 print("#", end="")
             print("")
