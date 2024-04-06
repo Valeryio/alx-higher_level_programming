@@ -1,0 +1,19 @@
+========================================
+ How to use matrix_divided(matrix, div)
+========================================
+
+This library is very simple, since it only has one function called
+``matrix_divided()``
+
+Importing the library to use
+>>> __import__("2-matrix_divided").matrix_divided
+
+
+No argument
+=============
+Testing the argument 'matrix'
+::
+	>>> matrix_divided(['a', '2', (1, 2)])
+	Traceback (most recent call last):
+		...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats

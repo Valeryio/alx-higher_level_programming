@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """
     This module contains the implementation of the sum function.
-"""
-def add_integer(a, b=98):
-    """This function returns the sum of two integers
-        
         :param a: an integer or a float
         :param b: an integer of a float
+"""
 
+def add_integer(a, b=98):
+    """This function returns the sum of two integers
         :return: an integer
     """
     if isinstance(a, (list, dict, tuple)):
