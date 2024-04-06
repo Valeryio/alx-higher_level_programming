@@ -1,0 +1,76 @@
+=======================================
+	Test of the sum function
+=======================================
+
+This is library is very simple, since it only has one function called
+``add_integer()``.
+
+Importing dynamically the module that we want to test
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+Numbers
+========
+Testing the simple case where everything works fine, with number or floats!
+::
+	>>> add_integer(2, 3)
+	5
+	>>> add_integer(2.4, 3.9)
+	5
+
+String
+======
+Test on the first argument
+::
+	>>> add_integer('a', 3)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Test on the second argument
+::
+	>>> add_integer(3, 'a')
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+List
+====
+Test on the first argument
+::
+	>>> add_integer([1, 2, 3], 3)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Test on the second argument
+::
+	>>> add_integer(3, [1, 2, 3])
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Dictionnary
+===========
+Testing on the first argument
+::
+	>>> add_integer({'a': 'value'}, 3)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Testing on the second argument
+::
+	>>> add_integer(3, {'a': 'value'})
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+No arguments passed
+===================
+Testing the case where there's no a argument
+::
+	>>> add_integer(None)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
