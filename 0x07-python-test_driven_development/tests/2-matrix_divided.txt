@@ -1,5 +1,5 @@
 =========================================================
-	How to use matrix_divided funtion
+	How to use the module matrix_divided.py
 =========================================================
 
 This library is very simple, since it only has one function called

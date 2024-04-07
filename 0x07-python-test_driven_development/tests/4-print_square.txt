@@ -1,2 +1,51 @@
-===================================
+=========================================
 	How to use print_square.py
+=========================================
+
+This module is very simple, since it only has one function called
+``print_square()``.
+
+
+Importing dynamically the module that we'll use
+::
+	>>> print_square = __import__('4-print_square').print_square
+
+
+Non number argument is given
+============================
+Testing when negative float argument is given
+::
+	>>> print_square(-1.2)
+	Traceback (most recent call last):
+		...
+	ValueError: size must be >= 0
+
+Testing when non number argument is given
+::
+	>>> print_square('a')
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+
+Testing when x < 0 is given as argument
+::
+	>>> print_square(-10)
+	Traceback (most recent call last):
+		...
+	ValueError: size must be >= 0
+
+Number arguments have been given
+================================
+Testing when a float argument is given
+::
+	>>> print_square(1.9)
+	##
+	##
+
+Testing when an int argument is given
+::
+	>>> print_square(4)
+	####
+	####
+	####
+	####

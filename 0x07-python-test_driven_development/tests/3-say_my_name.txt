@@ -1,5 +1,5 @@
 ==================================================
-	How to use the function say_my_name()
+	How to use the module say_my_name.py
 ==================================================
 
 This module is simple, and is about, how to use the function ``say_my_name()``.
