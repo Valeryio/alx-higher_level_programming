@@ -1,0 +1,15 @@
+==================================================
+	How to use the module text_indentation
+==================================================
+
+This module is very simple cause it only has one function named
+``text_indentation``.
+
+Import dynamically the module to use it
+::
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Non string is given
+===================
+Test on the function when an integer character is given
+::
