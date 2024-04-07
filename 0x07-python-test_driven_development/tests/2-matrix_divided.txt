@@ -11,17 +11,9 @@ Importing dynamically the library to use
 
 Not the right argument matrix
 =============================
-Testing the argument 'matrix' to have a list of list
+Testing the argument 'matrix' to have a list of list of integers or floats
 ::
-	>>> matrix_divided(['a', '2', (1, 2)], 0)
-	Traceback (most recent call last):
-		...
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-Testing the argument 'matrix' to have a list of list of the same length with
-only floats or int elements
-::
-	>>> matrix_divided([[1, 2, '4', 'm'], [1, 2, 3, 5]], 0)
+	>>> matrix_divided([[1, 2, '4', 'm'], [1, 2, 3, 5], 'a', 'b'], 0)
 	Traceback (most recent call last):
 		...
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
