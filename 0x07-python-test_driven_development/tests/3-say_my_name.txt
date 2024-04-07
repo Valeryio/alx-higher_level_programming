@@ -1,0 +1,25 @@
+==================================================
+	How to use the function say_my_name()
+==================================================
+
+This module is simple, and is about, how to use the function ``say_my_name()``.
+
+Import dynamically the module we want to use
+::
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+arguments are not a string
+=========================
+Testing the first argument
+::
+	>>> say_my_name(1):
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+
+Testing the first argument
+::
+	>>> say_my_name("S", 8):
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
