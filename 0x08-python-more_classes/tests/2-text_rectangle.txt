@@ -1,0 +1,35 @@
+==================================================
+	How to use the module 2-rectangle.py?
+==================================================
+
+This module is pretty simple since it only has one class with its
+properties and methods. This is the class ``rectangle``!
+
+Importing dynamically the module
+::
+	>>> Rectangle = __import__('2-rectangle').Rectangle
+
+
+Get the perimeter of a rectangle
+=================================
+Testing the class we have created is functionning
+::
+	>>> a = Rectangle(1, 2)
+	>>> a.width
+	1
+	>>> a.height
+	2
+	>>> a.perimeter()
+	6
+
+Get the area of a rectangle
+=================================
+Testing the class we have created is functionning
+::
+	>>> a = Rectangle(1, 2)
+	>>> a.width
+	1
+	>>> a.height
+	2
+	>>> a.area()
+	2
