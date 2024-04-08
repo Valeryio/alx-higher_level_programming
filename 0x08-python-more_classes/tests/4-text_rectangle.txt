@@ -1,0 +1,54 @@
+==================================================
+	How to use the module 4-rectangle.py?
+==================================================
+
+This module is pretty simple since it only has one class with its
+properties and methods. This is the class ``rectangle``!
+
+Importing dynamically the module
+::
+	>>> Rectangle = __import__('4-rectangle').Rectangle
+
+
+Get the __str__ representation of the class
+===========================================
+Testing the __str__ of the class
+::
+	>>> a = Rectangle(2, 4)
+	>>> print(str(a))
+	##
+	##
+	##
+	##
+
+
+Get the __repr__ representation of the class
+===========================================
+Testing the __repr__ of the class
+::
+	>>> print(repr(a))
+	Rectangle(2, 4)
+
+
+Get the __str__ representation of the class with eval
+=====================================================
+Testing the class we have created is functionning
+::
+	>>> b = eval(repr(a))
+	>>> print(str(b))
+	##
+	##
+	##
+	##
+
+
+Get the print representation of the class with eval
+=====================================================
+Testing the class we have created is functionning
+::
+	>>> b = eval(repr(a))
+	>>> print(b)
+	##
+	##
+	##
+	##
