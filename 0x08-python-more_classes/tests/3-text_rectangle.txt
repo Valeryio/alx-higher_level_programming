@@ -40,3 +40,12 @@ Testing the class we have created is functionning
 	##
 	##
 	##
+
+
+Get the __str__ representation of the class of empty rectangle
+==============================================================
+Testing the __str__ of the class
+::
+	>>> a = Rectangle(2, 0)
+	>>> print(str(a))
+	<BLANKLINE>
