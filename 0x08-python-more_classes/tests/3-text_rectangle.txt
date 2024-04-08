@@ -1,0 +1,42 @@
+==================================================
+	How to use the module 3-rectangle.py?
+==================================================
+
+This module is pretty simple since it only has one class with its
+properties and methods. This is the class ``rectangle``!
+
+Importing dynamically the module
+::
+	>>> Rectangle = __import__('3-rectangle').Rectangle
+
+
+Get the __str__ representation of the class
+===========================================
+Testing the __str__ of the class
+::
+	>>> a = Rectangle(2, 4)
+	>>> print(str(a))
+	##
+	##
+	##
+	##
+
+
+Get the __repr__ representation of the class
+===========================================
+Testing the __repr__ of the class
+::
+	>>> print(repr(a)) #doctest: +ELLIPSIS
+	<3-rectangle.Rectangle object at 0x...>
+
+
+Get the print representation of the class
+===========================================
+Testing the class we have created is functionning
+::
+	>>> a = Rectangle(2, 4)
+	>>> print(a)
+	##
+	##
+	##
+	##
