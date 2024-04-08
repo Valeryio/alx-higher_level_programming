@@ -22,6 +22,20 @@ Testing the class we have created is functionning
 	>>> a.perimeter()
 	6
 
+
+Get the perimeter of a rectangle
+=================================
+Testing the class we have created is functionning
+::
+	>>> a = Rectangle(1, 0)
+	>>> a.perimeter()
+	0
+
+	>>> a = Rectangle(0, 2)
+	>>> a.perimeter()
+	0
+
+
 Get the area of a rectangle
 =================================
 Testing the class we have created is functionning
