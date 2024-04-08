@@ -1,0 +1,19 @@
+==================================================
+	How to use the module 5-rectangle.py?
+==================================================
+
+This module is pretty simple since it only has one class with its
+properties and methods. This is the class ``rectangle``!
+
+Importing dynamically the module
+::
+	>>> Rectangle = __import__('5-rectangle').Rectangle
+
+
+Implementation of the __del__ method
+=====================================
+Testing the __del__ of the class
+::
+	>>> a = Rectangle(2, 4)
+	>>> del a
+	Bye rectangle...
