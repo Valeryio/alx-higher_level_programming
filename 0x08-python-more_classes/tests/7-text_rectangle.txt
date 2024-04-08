@@ -1,0 +1,58 @@
+==================================================
+	How to use the module 7-rectangle.py?
+==================================================
+
+This module is pretty simple since it only has one class with its
+properties and methods. This is the class ``rectangle``!
+
+Importing dynamically the module
+::
+	>>> Rectangle = __import__('7-rectangle').Rectangle
+
+
+Testing with the character #
+=====================================
+Testing the character with the normal output
+::
+	>>> a = Rectangle(8, 4)
+	>>> print(a)
+	########
+	########
+	########
+	########
+
+
+Testing with the character &
+=====================================
+Testing the character '&'
+::
+	>>> a.print_symbol = "&"
+	>>> print(a)
+	&&&&&&&&
+	&&&&&&&&
+	&&&&&&&&
+	&&&&&&&&
+
+
+Testing with the character C
+=====================================
+Testing the character 'C'
+::
+	>>> a.print_symbol = "C"
+	>>> print(a)
+	CCCCCCCC
+	CCCCCCCC
+	CCCCCCCC
+	CCCCCCCC
+
+
+Testing with the character list ["C", "is"]
+====================================================
+Testing the list ["C", "is"]
+::
+	>>> a.print_symbol = ["C", "is"]
+	>>> print(a)
+	["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]
+	["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]
+	["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]
+	["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]["C", "is"]
