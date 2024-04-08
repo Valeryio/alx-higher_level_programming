@@ -2,14 +2,14 @@
 """
     This module is about a class that we created to manipulate rectangles
 """
-    
-    class Rectangle:
+
+
+class Rectangle:
     """This is an empty class of rectangle
 
         Note:
         Args:
         Attributes:
     """
-    
-        def __init__(self):
-            pass
+    def __init__(self):
+        pass
