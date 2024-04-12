@@ -14,9 +14,9 @@ def add_integer(a, b=98):
     if isinstance(b, (list, dict, tuple)):
         raise TypeError("b must be an integer")
 
-    if not isinstance(a, (int, float)) or a == inf or a == -inf:
+    if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)) or b == inf or b == -inf:
+    if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
 
     return int(a) + int(b)
