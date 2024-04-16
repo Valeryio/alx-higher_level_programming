@@ -13,8 +13,9 @@ Normal Output
 =============
 Testing with a right file, in the good format
 ::
-	>>> read_file('my_file_0.txt')
-We offer a truly innovative approach to education:
-focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers. 
+	>>> read_file('./tests/my_file_0.txt')
+	We offer a truly innovative approach to education:
+	focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers.
+	<BLANKLINE> 
+	A school every software engineer would have dreamt of!
 
-A school every software engineer would have dreamt of!
