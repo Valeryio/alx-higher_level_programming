@@ -4,6 +4,7 @@
     This module is simple and just add some strings to a defined file
 """
 
+
 def append_after(filename="", search_string="", new_string=""):
     """
         This function append a special string after a found string
