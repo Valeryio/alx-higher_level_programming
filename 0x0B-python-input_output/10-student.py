@@ -30,5 +30,5 @@ class Student:
                 if attr_key == key:
                     new_dict[key] = value
 
-        new_dict = [(k, val) for k, val in reversed(new_dict.items())]
+        new_dict = dict([(k, val) for k, val in reversed(new_dict.items())])
         return new_dict
