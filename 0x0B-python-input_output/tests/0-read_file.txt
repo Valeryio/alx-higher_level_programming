@@ -18,4 +18,3 @@ Testing with a right file, in the good format
 	focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers.
 	<BLANKLINE> 
 	A school every software engineer would have dreamt of!
-
