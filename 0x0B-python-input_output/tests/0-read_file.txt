@@ -1,0 +1,20 @@
+============================================================
+		Tests on the module read_file.py
+=============================================================
+
+This module is very simple since it only contains one function
+that is `read_file()`.
+
+Importing dynamically the module to use
+>>> read_file = __import__('0-read_file').read_file
+
+
+Normal Output
+=============
+Testing with a right file, in the good format
+::
+	>>> read_file('my_file_0.txt')
+We offer a truly innovative approach to education:
+focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers. 
+
+A school every software engineer would have dreamt of!
