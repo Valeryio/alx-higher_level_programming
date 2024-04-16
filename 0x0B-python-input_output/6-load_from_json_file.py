@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """
-    THis module serialize an object in json and save it into a file
+    THis module deserialize an object in json and save it into a file
 """
 import json
 
 
-def load_from_json_file(my_obj, filename):
+def load_from_json_file(filename):
     """
-        This function serialize a python's object to a file
+        This function deserialize a python's object to a file
     Args:
-        my_obj (object): the object to serialize
+        my_obj (object): the object to deserialize
         filename (string): The file's name
     """
-    with open(filename, 'w', encoding="UTF-8") as json_file:
-        my_obj = json.load(json_file)
+    with open(filename, 'r', encoding="UTF-8") as json_file:
+        return json.load(json_file)
