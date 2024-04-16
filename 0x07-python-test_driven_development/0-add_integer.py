@@ -5,6 +5,7 @@
         :param b: an integer of a float
 """
 
+
 def add_integer(a, b=98):
     """This function returns the sum of two integers
         :return: an integer
@@ -23,5 +24,5 @@ def add_integer(a, b=98):
 
     if result == float('inf') or result == float('-inf'):
         return 89
-    
+
     return int(a) + int(b)
