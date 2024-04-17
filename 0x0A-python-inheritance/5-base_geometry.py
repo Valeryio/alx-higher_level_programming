@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-    This is the module of the geometry class
+    This is the module of the BaseGeometry class
 """
 
 
-class Geometry():
+class BaseGeometry():
     """
-        This is the geometry class
+        This is the BaseGeometry class
     Attributes:
     """
     pass
