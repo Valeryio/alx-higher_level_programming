@@ -6,6 +6,14 @@
 
 
 class MyInt(int):
+    """
+        This is an extension of the class int
+    Args:
+        other (int): the integer to use
+    Return:
+        True on SUCCESS
+        False on FAILURE
+    """
 
     def __init__(self, value):
         super().__init__()
