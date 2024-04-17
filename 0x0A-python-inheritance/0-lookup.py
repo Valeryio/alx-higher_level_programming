@@ -14,4 +14,4 @@ def lookup(obj):
     Returns:
         A list
     """
-    return obj.__dict__
+    return list(obj.__dict__)
