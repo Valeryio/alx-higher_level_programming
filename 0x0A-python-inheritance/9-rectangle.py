@@ -35,3 +35,9 @@ class Rectangle(BaseGeometry):
         super().integer_validator("height", height)
         self.__width = width
         self.__height = height
+
+    def area(self):
+        return (self.__height * self.__width)
+
+    def __str__(self):
+        return "[Rectangle]" + str(self.width) + "/" + str(self.height)
