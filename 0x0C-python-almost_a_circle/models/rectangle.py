@@ -74,3 +74,15 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
+
+# Validator method
+    def typevalidator(self, attribute, value):
+        """
+            This function is a validator to ensure that we get the right
+            type for the attributes of our object
+        Args:
+            attribute (string): the name of the attribute
+            value (int): the value of the attribute
+        """
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(attribute))
