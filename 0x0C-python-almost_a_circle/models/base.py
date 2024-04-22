@@ -2,6 +2,7 @@
 """
     This module contains the base class of the project and all its attributes
 """
+import json
 
 
 class Base:
@@ -25,3 +26,35 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """
+            This serialise a python object to a json object notation
+        """
+
+        data = []
+        if list_dictionaries is None:
+            return "[]"
+        
+        for i in list_dictionaries:
+            data.append(json.dumps(i))
+
+        return data
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+
+        data  = []
+        filename = cls.__name__+'.json'
+
+        with open(filename, 'w') as file:
+            if list_objs is None:
+                json.dump("[]", file)
+            else:
+                for i in list_objs:
+                   data.append(i.to_dictionary())
+                print(data)
+
+                data = cls.to_json_string(data)
+                print(data)
+               # json.dump(data, file)
