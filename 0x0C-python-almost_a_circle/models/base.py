@@ -35,7 +35,7 @@ class Base:
         data = []
         if list_dictionaries is None:
             return "[]"
-        
+
         for i in list_dictionaries:
             data.append(json.dumps(i))
 
@@ -44,7 +44,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
 
-        data  = []
+        data = []
         filename = cls.__name__+'.json'
 
         with open(filename, 'w') as file:
@@ -52,9 +52,9 @@ class Base:
                 json.dump("[]", file)
             else:
                 for i in list_objs:
-                   data.append(i.to_dictionary())
+                    data.append(i.to_dictionary())
                 print(data)
 
                 data = cls.to_json_string(data)
                 print(data)
-               # json.dump(data, file)
+# json.dump(data, file)
