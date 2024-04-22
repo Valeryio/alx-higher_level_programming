@@ -92,3 +92,17 @@ class Rectangle(Base):
             This function computes the are of the rectangle
         """
         return self.__width * self.__height
+
+    def display(self):
+        """
+            This function displays the rectangle on the stdout
+        """
+        for i in range(self.y):
+            print()
+
+        for i in range(self.height):
+            for k in range(self.x):
+                print(" ", end="")
+            for j in range(self.width):
+                print("#", end="")
+            print()
