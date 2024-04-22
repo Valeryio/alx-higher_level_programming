@@ -43,3 +43,13 @@ class Square(Rectangle):
                 for i in attributes:
                     if i == attr:
                         setattr(self, i, value)
+
+    def to_dictionary(self):
+        class_dict = {}
+        attributes = ['id', 'x', 'size', 'y']
+        values = [self.id, self.x, self.size, self.y]
+
+        for attr, value in zip(attributes, values):
+            class_dict[attr] = value
+
+        return class_dict
