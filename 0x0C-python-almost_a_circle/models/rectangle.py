@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
     This module contains a simple class that inherits from the base
     class. Here we have a rectangle
