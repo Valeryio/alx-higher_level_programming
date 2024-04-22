@@ -30,7 +30,6 @@ class TestRectangle(unittest.TestCase):
             r5 = Rectangle(1, 2, 'a')
             r5 = Rectangle(1, 2, 3, 'a')
 
-
     def test_area(self):
         r4 = Rectangle(8, 7)
 
