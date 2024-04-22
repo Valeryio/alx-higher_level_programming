@@ -128,6 +128,9 @@ class Rectangle(Base):
                         setattr(self, i, value)
 
     def to_dictionary(self):
+        """
+            This functino returns a dictionnary of a class
+        """
         class_dict = dict()
         attributes = ['x', 'y', 'id', 'height', 'width']
         values = [self.x, self.y, self.id, self.height, self.width]
