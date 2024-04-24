@@ -33,7 +33,7 @@ class Base:
             This serialise a python object to a json object notation
         """
         data = ""
-        if list_dictionaries == []:
+        if list_dictionaries == [] or list_dictionaries is None:
             return "[]"
 
         data = json.dumps(list_dictionaries)
