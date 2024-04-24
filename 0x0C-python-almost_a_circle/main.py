@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-""" 1-main """
-from models.rectangle import Rectangle
+""" Check """
+import inspect
+from models.base import Base
 
-if __name__ == "__main__":
+to_json_string_fct = Base.__dict__.get("to_json_string")
+if to_json_string_fct is None:
+    print("Base doesn't have method to_json_string")
+    exit(1)
 
-    r1 = Rectangle(10, 2)
-    print(r1.id)
+if type(to_json_string_fct) is not staticmethod:
+    print("to_json_string is not a static method")
+    exit(1)
 
-    r2 = Rectangle(2, 10)
-    print(r2.id)
-
-    r3 = Rectangle(10, 2, 0, 0, 12)
-    print(r3.id)
+print("OK", end="")
