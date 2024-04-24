@@ -37,13 +37,6 @@ class Base:
             return "[]"
 
         data = json.dumps(list_dictionaries)
-#           print("ICI")
-#        for i in list_dictionaries:
-#            print(i)
-#            result = json.dumps(i)
-#            print(f"LE RESULTAT : {i}")
-#            data.append(result)
-#        print(f"Affichons data : {data}")
 
         return str(data)
 
@@ -55,12 +48,10 @@ class Base:
 
         with open(filename, 'w') as file:
             if list_objs is None:
-                json.dump("[]", file)
+                json.dump([], file)
             else:
                 for i in list_objs:
                     data.append(i.to_dictionary())
-                print(data)
 
                 data = cls.to_json_string(data)
-                print(data)
-# json.dump(data, file)
+                file.write(data)

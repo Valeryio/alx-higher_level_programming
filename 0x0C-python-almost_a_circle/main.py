@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-""" Check """
-from models.base import Base
+""" 15-main """
+from models.rectangle import Rectangle
 
-list_dictionaries = None
-rjson = Base.to_json_string(list_dictionaries)
-rjson_expected = "[]"
+if __name__ == "__main__":
 
-if rjson is None:
-    print("to_json_string is not returning a string")
-    exit(1)
+    r1 = Rectangle(10, 7, 2, 8)
+    r2 = Rectangle(2, 4)
+    Rectangle.save_to_file([r1, r2])
 
-if rjson != rjson_expected:
-    print("to_json_string on {} must return {}: {}".format(list_dictionaries, rjson_expected, rjson))
-    exit(1)
-
-print("OK", end="")
+    with open("Rectangle.json", "r") as file:
+        print(file.read())
