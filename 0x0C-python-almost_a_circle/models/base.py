@@ -55,3 +55,16 @@ class Base:
 
                 data = cls.to_json_string(data)
                 file.write(data)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+            This method deserialise a python to a string
+        """
+        data = ""
+
+        if json_string == [] or json_string is None:
+            return []
+
+        data = json.loads(json_string)
+        return data
