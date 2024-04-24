@@ -32,14 +32,20 @@ class Base:
         """
             This serialise a python object to a json object notation
         """
-        data = []
+        data = ""
         if list_dictionaries == []:
             return "[]"
 
-        for i in list_dictionaries:
-            data.append(json.dumps(i))
+        data = json.dumps(list_dictionaries)
+#           print("ICI")
+#        for i in list_dictionaries:
+#            print(i)
+#            result = json.dumps(i)
+#            print(f"LE RESULTAT : {i}")
+#            data.append(result)
+#        print(f"Affichons data : {data}")
 
-        return data
+        return str(data)
 
     @classmethod
     def save_to_file(cls, list_objs):
