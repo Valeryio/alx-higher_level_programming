@@ -117,7 +117,7 @@ class Rectangle(Base):
         """
         attributes = ['id', 'width', 'height', 'x', 'y']
 
-        if args is not None and len(args) != 0:
+        if args is not None and len(args) != 0 and kwargs is None:
 
             for attr, value in zip(attributes, args):
                 setattr(self, attr, value)
