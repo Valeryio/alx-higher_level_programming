@@ -1,4 +1,4 @@
 -- changing class
 
-DELETE FRROM second_table
+DELETE FROM second_table
 WHERE score <= 5
