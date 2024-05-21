@@ -1,4 +1,3 @@
 -- grouping in SQL
-SELECT score
+SELECT score, SUM(score) AS "number"
 FROM second_table
-SUM(score) AS "number"
