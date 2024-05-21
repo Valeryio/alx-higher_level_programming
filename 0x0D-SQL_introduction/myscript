@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+echo "VOici le truc : $1"
