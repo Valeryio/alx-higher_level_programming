@@ -3,6 +3,7 @@
     This module contains the base class of the project and all its attributes
 """
 import json
+from rectangle import Rectangle
 
 
 class Base:
