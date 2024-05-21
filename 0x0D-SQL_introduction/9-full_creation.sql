@@ -1,4 +1,5 @@
 -- full table creation
+
 USE hbtn_0c_0;
 CREATE TABLE second_table(
 	id INT,
