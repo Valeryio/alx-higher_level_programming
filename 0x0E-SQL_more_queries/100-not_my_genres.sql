@@ -1,5 +1,6 @@
 -- not my genres
-SELECT *
+
+SELECT name
 FROM tv_genres
 WHERE name NOT IN (
 SELECT tv_genres.name
