@@ -2,8 +2,7 @@
 
 const process = require('process');
 
-let newArray = process.argv.slice(2);
-let tmp;
+let newArray = process.argv.slice(2), tmp;
 
 if (process.argv.length <= 3) {
   console.log(0);
@@ -19,4 +18,3 @@ if (process.argv.length <= 3) {
   }
   console.log(newArray[1]);
 }
-
