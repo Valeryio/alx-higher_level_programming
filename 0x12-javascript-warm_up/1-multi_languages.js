@@ -2,7 +2,7 @@
 
 let info = ["C is fun", "Python is cool", "JavaScript is amazing"];
 
-for (const item of info)
+for (let i = 0; i < info.length; i++)
 {
-	console.log(item);
+	console.log(info[i]);
 }
