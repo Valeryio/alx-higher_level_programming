@@ -7,6 +7,8 @@ let tmp;
 
 if (process.argv.length < 3) {
   console.log(0);
+} else if (process.argv.length === 3) {
+  console.log(0);
 } else {
   for (let i = 0; i < newArray.length; i++) {
     for (let j = 0; j < newArray.length - i; j++)
