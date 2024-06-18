@@ -2,6 +2,7 @@
 /**
  * This the task 5
  */
+// This is a comment for the task 5
 
 const process = require("process");
 
