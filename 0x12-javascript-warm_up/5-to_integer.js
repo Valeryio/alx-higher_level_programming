@@ -9,5 +9,5 @@ myNumber = parseInt(process.argv[2]);
 if (isNaN(myNumber)) {
   console.log('Not a number');
 } else {
-  console.log(myNumber);
+  console.log('My number:', myNumber);
 }
