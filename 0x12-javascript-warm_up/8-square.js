@@ -11,6 +11,6 @@ if (isNaN(x)) {
     for (let j = 0; j < x; j++) {
       process.stdout.write('X');
     }
-  console.log('');
+    console.log('');
   }
 }
