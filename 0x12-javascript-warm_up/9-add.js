@@ -2,8 +2,8 @@
 
 const process = require('process');
 
-function add(a, b) {
-  return parseInt (a) + parseInt (b);
+function add (a, b) {
+  return parseInt(a) + parseInt(b);
 }
 
 if (process.argv.length < 4) {
