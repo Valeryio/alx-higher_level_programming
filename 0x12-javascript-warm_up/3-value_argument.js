@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
 const process = require('process');
+let i = 2;
 
 if (process.argv.length < 3) 
 {
@@ -8,8 +9,9 @@ if (process.argv.length < 3)
 }
 else
 {
-	for (let i = 2; i < process.argv.length; i++)
+	while (process.argv[i] != undefined)
 	{
 		console.log(process.argv[i]);
+		i++;
 	}
 }
