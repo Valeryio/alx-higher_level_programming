@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
-exports.add = function (a, b) {
+module.exports = function (a, b) {
   return parseInt(a) + parseInt(b);
 }
