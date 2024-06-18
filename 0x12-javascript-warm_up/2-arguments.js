@@ -4,9 +4,9 @@ const process = require('process');
 
 if (process.argv.length < 3) 
 {
-	console.log("No arguments");
+  console.log("No argument");
 }
 else
 {
-	console.log("Argument found");
+  console.log("Arguments found");
 }
