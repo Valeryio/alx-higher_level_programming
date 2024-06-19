@@ -3,7 +3,7 @@
 const process = require('process');
 const x = parseInt(process.argv[2]);
 
-function fact(x) {
+function fact (x) {
   if (x === 0) {
     return 1;
   }
