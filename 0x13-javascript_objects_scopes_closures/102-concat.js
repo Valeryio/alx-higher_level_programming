@@ -2,16 +2,17 @@
 
 // This program open two files and concat their content
 
+const process = require('process');
 const fs = require('fs');
 
 try {
-  const dataFileA = fs.readFileSync('./fileA', 'utf8');
-  const dataFileB = fs.readFileSync('./fileB', 'utf8');
+  const dataFileA = fs.readFileSync(process.argv[3], 'utf8');
+  const dataFileB = fs.readFileSync(process.argv[2], 'utf8');
   const data = dataFileA + dataFileB;
   try {
-    fs.writeFileSync('./fileC', data);
+    fs.writeFileSync(process.argv[4], data);
   } catch (err) {
-      console.log('Writing Error');
+    console.log('Writing Error');
   }
 } catch (err) {
   console.log('Reading Error');
