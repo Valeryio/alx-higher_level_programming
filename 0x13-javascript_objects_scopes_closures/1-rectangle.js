@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 class Rectangle {
-  witdh;
+  width;
   height;
 
   constructor (w, h) {
