@@ -8,8 +8,8 @@ class Square extends Rectangle {
   }
 
   charPrint (symbol = 'X') {
-    for (let i = 0; i < this.width; i++) {
-      for (let j = 0; j < this.height; j++) {
+    for (let i = 0; i < this.size; i++) {
+      for (let j = 0; j < this.size; j++) {
         process.stdout.write(symbol);
       }
       console.log('');
