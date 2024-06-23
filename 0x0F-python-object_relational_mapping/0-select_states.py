@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# THis is the module for instanciate a simple connection with sqlalchemy
+
 import os
 import sys
 import MySQLdb
@@ -38,7 +40,7 @@ if __name__ == "__main__":
     # mapped objects
     Base = declarative_base()
 
-    class States(Base):
+    class State(Base):
         """This is the mapped States class that have a relation to the
             simple states table in the database
         Attributes:
@@ -57,10 +59,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    all_states = session.query(States).all()
+    all_states = (session.query(State).order_by(State.id.asc()).all())
 
     for state in all_states:
         print(state)
-#    print("(", state.id, ", ", state.name, ")")
 
     session.close()
