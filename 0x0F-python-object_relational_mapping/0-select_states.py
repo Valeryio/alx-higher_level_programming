@@ -11,6 +11,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
 
+os.environ['SQLALCHEMY_SILENCE_UBER_WARNING'] = '1'
 
 def start_engine():
     """This function creates a new engine object
@@ -27,7 +28,6 @@ def start_engine():
 
 if __name__ == "__main__":
 
-    os.environ['SQLALCHEMY_SILENCE_UBER_WARNING'] = '1'
     """
     try:
         engine = start_engine
