@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# THis is the module for instanciate a simple connection with sqlalchemy
+""" This is the module for instanciate a simple connection with sqlalchemy"""
 
 import os
 import sys
