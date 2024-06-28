@@ -11,24 +11,25 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
 
-os.environ['SQLALCHEMY_SILENCE_UBER_WARNING'] = '1'
-
-def start_engine():
-    """This function creates a new engine object
-    Returns:
-        An engine object
-    """
-    user = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[3]
-
-    return create_engine(f"mysql+pymysql://{user}:\
-{password}@localhost:3306/{database}")
-
-
 if __name__ == "__main__":
 
+    os.environ['SQLALCHEMY_SILENCE_UBER_WARNING'] = '1'
+
+    def start_engine():
+        """This function creates a new engine object
+        Returns:
+            An engine object
+        """
+        user = sys.argv[1]
+        password = sys.argv[2]
+        database = sys.argv[3]
+
+        return create_engine(f"mysql+pymysql://{user}:\
+                            {password}@localhost:3306/{database}")
+
+    """ Create the engine that will communicate with the SQL Database"""
     engine = start_engine()
+    
     """Instanciation of the Base class that will extends the defined
     mapped objects"""
     Base = declarative_base()
@@ -46,6 +47,7 @@ if __name__ == "__main__":
         name = Column(String)
 
         def __repr__(self):
+            """Sets the internal representation of the class"""
             return f"({self.id}, '{self.name}')"
 
     # Create new tables in the specified database
