@@ -10,9 +10,6 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
 
-
-os.environ['SQLALCHEMY_SILENCE_UBER_WARNING'] = '1'
-
 def start_engine():
     """This function creates a new engine object
     Returns:
