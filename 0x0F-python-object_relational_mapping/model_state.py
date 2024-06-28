@@ -22,12 +22,14 @@ def start_engine():
     return create_engine(f"mysql+pymysql://{user}:\
                         {password}@localhost:3306/{database}")
 
+
 """ Create the engine that will communicate with the SQL Database"""
 engine = start_engine()
-    
+
 """Instanciation of the Base class that will extends the defined
 mapped objects"""
 Base = declarative_base()
+
 
 class State(Base):
     """This is the mapped States class that have a relation to the
@@ -38,7 +40,7 @@ class State(Base):
         @name: (str), the name of the state
     """
     __tablename__ = "states"
-    id = Column(Integer, primary_key=True, autoincrement=True,\
+    id = Column(Integer, primary_key=True, autoincrement=True,
                 nullable=False)
     name = Column(String(128), nullable=False)
 
