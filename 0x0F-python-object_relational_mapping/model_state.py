@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-""" This is the module for instanciate a simple connection with sqlalchemy"""
+""" This is the module for instanciate a simple connection with sqlalchemy
+"""
 
 import os
 import sys
-import MySQLdb
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
