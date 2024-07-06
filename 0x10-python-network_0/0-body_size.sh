@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # This script curl the content length on a page
 
 IP=$1
