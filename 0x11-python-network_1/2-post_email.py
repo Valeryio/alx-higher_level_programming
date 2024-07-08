@@ -9,7 +9,7 @@ import urllib.request
 url = sys.argv[1]
 mail = sys.argv[2]
 
-value = {"email" : mail}
+value = {"email": mail}
 data = urllib.parse.urlencode(values)
 data = data.encode('ascii')
 req = urllib.request.Request(url, data)
