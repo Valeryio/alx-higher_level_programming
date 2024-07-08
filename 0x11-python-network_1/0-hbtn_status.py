@@ -5,12 +5,10 @@
 import urllib.request
 
 
-if __name__ == "__main__":
-
-    url = "https://alx-intranet.hbtn.io/status"
-    with urllib.request.urlopen(url) as response:
-        result = response.read()
-        print("Body response:"
-                "\n\t- type:", type(result),\
-                "\n\t- content:", result,\
-                "\n\t- utf8 content:", response.msg)
+url = "https://alx-intranet.hbtn.io/status"
+with urllib.request.urlopen(url) as response:
+    result = response.read()
+    print("Body response:"
+            "\n\t- type:", type(result),
+            "\n\t- content:", result,
+            "\n\t- utf8 content:", response.msg)
