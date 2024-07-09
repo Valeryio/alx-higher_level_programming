@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# This module gets the header of a requests
+"""This module makes a post request"""
 
 import sys
 import urllib.request
@@ -10,7 +10,7 @@ url = sys.argv[1]
 mail = sys.argv[2]
 
 value = {"email": mail}
-data = urllib.parse.urlencode(values)
+data = urllib.parse.urlencode(value)
 data = data.encode('ascii')
 req = urllib.request.Request(url, data)
 

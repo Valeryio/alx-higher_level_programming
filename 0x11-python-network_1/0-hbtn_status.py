@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# This file make a request with urllib
+""" This file make a request with urllib"""
 
 import urllib.request
 
