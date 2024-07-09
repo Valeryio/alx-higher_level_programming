@@ -6,7 +6,7 @@ import sys
 import urllib.request
 
 
-if __name__ == "___main__":
+if __name__ == "__main__":
     url = sys.argv[1]
     mail = sys.argv[2]
 
@@ -16,5 +16,5 @@ if __name__ == "___main__":
     req = urllib.request.Request(url, data)
 
     with urllib.request.urlopen(req) as response:
-        the_page = response.read()
-        print(the_page)
+        the_page = response.read().decode("utf-8")
+    print(the_page)
