@@ -9,5 +9,9 @@ if __name__ == "__main__":
 
     url = sys.argv[1]
     r = requests.get(url)
-    attended_header = r.headers["X-Request-Id"]
-    print(attended_header)
+    
+    try:
+        attended_header = r.headers["X-Request-Id"]
+        print(attended_header)
+    except KeyError:
+        pass
