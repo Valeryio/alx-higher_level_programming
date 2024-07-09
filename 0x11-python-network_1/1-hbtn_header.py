@@ -12,5 +12,7 @@ if __name__ == "__main__":
         new_dict = {}
         for key, value in response.getheaders():
             new_dict.setdefault(key, value)
-
-        print(new_dict["X-Request-Id"])
+        try:
+            print(new_dict["X-Request-Id"])
+        except KeyError:
+            pass
