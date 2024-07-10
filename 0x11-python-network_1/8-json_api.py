@@ -15,6 +15,8 @@ if __name__ == "__main__":
     value = {"q": param}
 
     r = requests.post("http://0.0.0.0:5000/search_user", data=value)
+    result = r.text
+    result = dict(result)
 
     if type(r.json()) is not dict:
         print("Not a valid JSON")
