@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# This program use some of my credentials to get my github ID
+""" This program use some of my credentials to get my github ID """
 
 import sys
 import requests
