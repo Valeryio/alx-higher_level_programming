@@ -8,7 +8,7 @@ import urllib.request
 if __name__ == "__main__":
 
     url = "https://alx-intranet.hbtn.io/status"
-    url = "http://0.0.0.0:5000"
+#    url = "http://0.0.0.0:5000"
 
     with urllib.request.urlopen(url) as response:
         result = response.read()
