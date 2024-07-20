@@ -27,7 +27,6 @@ class City(Base):
     name = Column(String(128), nullable=False)
     state_id = Column(Integer,  ForeignKey("states.id"), nullable=False)
 
-
     def __repr__(self):
         """Sets the internal representation of the class"""
         return f"({self.id}, '{self.name}')"
