@@ -30,4 +30,5 @@ if __name__ == "__main__":
         result_obj = session.execute(stmt)
         result = result_obj.first()
 
+        print("SUCCESS")
         print(result[0])
