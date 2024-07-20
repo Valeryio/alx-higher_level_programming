@@ -22,8 +22,8 @@ if __name__ == "__main__":
 
     # Create a session to request the database
     with engine.connect() as conn:
-        result_obj = conn.execute(text("SELECT * from states WHERE name LIKE
-                                       '%a%'"))
+        stmt = "SELECT * from states WHERE name LIKE '%a%'"
+        result_obj = conn.execute(text(stmt))
         result = result_obj.fetchall()
 
     for key, value in result:
