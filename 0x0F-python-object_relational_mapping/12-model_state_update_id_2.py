@@ -25,12 +25,3 @@ if __name__ == "__main__":
         stmt = "UPDATE states SET name='New Mexico' WHERE id=2"
         session.execute(text(stmt))
         session.commit()
-
-        result_obj = session.execute("SELECT * FROM states")
-        result = result_obj.fetchall()
-
-    if result == []:
-        print("Not found")
-    else:
-        for key, value in result:
-            print(str(key) + ": " + value)
