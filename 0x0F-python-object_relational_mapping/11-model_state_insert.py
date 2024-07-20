@@ -26,7 +26,8 @@ if __name__ == "__main__":
         session.execute(text(stmt))
         session.commit()
 
-        result_obj = session.execute("SELECT id FROM states WHERE name='Louisiana'")
+        stmt = "SELECT id FROM states WHERE name='Louisiana'"
+        result_obj = session.execute(stmt)
         result = result_obj.first()
 
         print(result[0])

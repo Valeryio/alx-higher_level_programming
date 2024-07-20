@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     # Create a session to request the database
     with Session(engine) as session:
-        stmt = "UPDATE states SET name='New Mexico' WHERE id=2)"
+        stmt = "UPDATE states SET name='New Mexico' WHERE id=2"
         session.execute(text(stmt))
         session.commit()
 
