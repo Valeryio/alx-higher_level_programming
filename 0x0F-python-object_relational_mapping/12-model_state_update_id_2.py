@@ -22,11 +22,15 @@ if __name__ == "__main__":
 
     # Create a session to request the database
     with Session(engine) as session:
-        stmt = "INSERT INTO states(name) VALUES('Louisiana')"
+        stmt = "UPDATE states SET name='New Mexico' WHERE id=2)"
         session.execute(text(stmt))
         session.commit()
 
-        result_obj = session.execute("SELECT id FROM states WHERE name='Louisiana'")
-        result = result_obj.first()
+        result_obj = session.execute("SELECT * FROM states")
+        result = result_obj.fetchall()
 
-        print(result[0])
+    if result == []:
+        print("Not found")
+    else:
+        for key, value in result:
+            print(str(key) + ": " + value)
