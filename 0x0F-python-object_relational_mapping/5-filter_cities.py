@@ -20,3 +20,4 @@ if __name__ == "__main__":
         print(result[i][0], end="")
         if i + 1 < len(result):
             print("", end=', ')
+    print("")

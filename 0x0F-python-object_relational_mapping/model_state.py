@@ -25,6 +25,7 @@ class State(Base):
                 nullable=False)
     name = Column(String(128), nullable=False)
 
+
     def __repr__(self):
         """Sets the internal representation of the class"""
         return f"({self.id}, '{self.name}')"
