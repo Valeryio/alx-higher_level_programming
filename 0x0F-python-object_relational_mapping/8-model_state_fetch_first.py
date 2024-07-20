@@ -25,4 +25,7 @@ if __name__ == "__main__":
         result_obj = conn.execute(text("SELECT * from states"))
         result = result_obj.first()
 
-    print(str(result[0]) + ": " + result[1])
+    if result is None:
+        print("Nothing")
+    else:
+        print(str(result[0]) + ": " + result[1])
