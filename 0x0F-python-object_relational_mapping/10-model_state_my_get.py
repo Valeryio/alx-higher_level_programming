@@ -16,15 +16,19 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
+    state_name = sys.argv[4]
 
     engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}".format(
         username, password, db_name))
 
     # Create a session to request the database
     with engine.connect() as conn:
-        result_obj = conn.execute(text("SELECT * from states WHERE name LIKE
-                                       '%a%'"))
+        result_obj = conn.execute(text("SELECT * from states WHERE name=:n"),
+                                  {'n': state_name},)
         result = result_obj.fetchall()
 
-    for key, value in result:
-        print(str(key) + ": " + value)
+    if result == []:
+        print("Not found")
+    else:
+        for key, value in result:
+            print(str(key))
